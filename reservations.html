@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PDX Historical Tours</title>
+    <link rel="stylesheet" href="styles/template__css.css">
+</head>
+<body>
+<div id="wrapper">
+    <a href="index.html"><div id="logo"><img src="site-assets/Logo.png" alt="Logo" width="65" height="60"></div></a>
+    <header><h1>Portland Historical Tours</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="downtown_tour.html">Downtown Tour</a>
+        <a href="albina_tour.html">Albina Tour</a>
+        <a href="landmarks_tour.html">Landmarks Tour</a>
+        <a href="reservations.html">Sign-Up</a>
+        <a href="general_info.html">General Info</a>
+    </nav>  
+    <main>
+        <h2>Book a Reservation Form</h2>
+        <h4>Choose your tour</h4>
+        <form method="post" action="http://webdevbasics.net/scripts/demo.php">
+            <input type="radio" id="downtown_tour" value="downtown_tour">
+                <label for="downtown_tour">Downtown Tour</label>
+            <input type="radio" id="albina_tour" value="albina_tour">
+                <label for="albina_tour">Albina Tour</label>
+            <input type="radio" id="landmarks_tour" value="landmarks_tour">
+                <label for="landmarks_tour">Landmarks Tour</label><br>
+            <label for="myFName">First name:</label>
+                <input type="text" name="myFName" id="myFName" required><br>
+            <label for="myLName">Last Name:</label>
+                <input type="text" name="myLName" id="myLName" required><br>
+            <label for="myEmail">Email:</label>
+                <input type="email" name="myEmail" id="myEmail" required><br>
+            <label for="myPhone">Phone number:</label>
+                <input type="text" name="myPhone" id="myPhone"><br>
+            <label for="myTour">Tour date</label>
+                <input type="date" name="myTour" id="myTour"><br>
+            <h4>Total Participants</h4>
+                <input type="radio" name="myPeople" value="myPeople">1<br>
+                <input type="radio" name="myPeople" value="myPeople">2<br>
+                <input type="radio" name="myPeople" value="myPeople">3<br>
+                <input type="radio" name="myPeople" value="myPeople">4<br>
+                <input type="radio" name="myPeople" value="myPeople">5<br>
+            <h4>Does anyone in your party have food or drink sensitivities? If so, what are they?</h4>
+                <textarea name="mySens" rows="3" cols="40"></textarea>
+                <input type="image" src="site-assets/button.jpg" alt="Sign Up" name="Submit" id="mySubmit">
+        </form>
+    </main>
+    <aside>
+        <div id="pic1"><img src="site-assets/Growth%20Tour%20Small.png" alt="Growth Tour" height="200" width="200"></div>
+    </aside>
+    
+<footer>
+    <h5>Copyright @ 2018 Juan Mera<br>
+    1200 NW Naito Parkway<br>
+    Portland, OR 97209<br>
+    Phone number: <a href="tel:503-555-1234">503-555-1234</a>
+    </h5>
+</footer>
+    </div>
+    </body>
+</html>
